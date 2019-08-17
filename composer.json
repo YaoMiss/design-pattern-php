@@ -1,0 +1,27 @@
+{
+    "name": "biyongyao/pattern-php",
+    "license": "MIT",
+    "type": "project",
+    "homepage": "https://test.com",
+    "version": "0.1",
+    "description": "pattern-php",
+    "authors": [
+        {
+            "name": "Bilyooyam",
+            "email": "biyongyao@qq.com",
+          "homepage": "https://blog.biyongyao.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "^7",
+        "squizlabs/php_codesniffer": "^3"
+},
+
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    }
+}
