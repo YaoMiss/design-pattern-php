@@ -17,7 +17,7 @@ class Leader extends Employee
 
     function add(Employee $employee)
     {
-        $this->employees[] = $employee;
+        $this->employees[$employee->getName()] = $employee;
 
         return $this;
     }

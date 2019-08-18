@@ -6,7 +6,7 @@
  * Time: 11:58
  */
 
-namespace App\Singleton\test;
+namespace Test;
 
 use PHPUnit\Framework\TestCase;
 use App\Singleton\Singleton;
@@ -21,6 +21,12 @@ class SingletonTest extends TestCase
 
         $this->assertInstanceOf(Singleton::class, $firstSingleton);
         $this->assertSame($firstSingleton, $secondSingleton);
+
+        $this->expectException(\Exception::class);
+
+        $new = clone $firstSingleton;
+
+        $this->assertNotSame($firstSingleton, $new);
     }
 
 }

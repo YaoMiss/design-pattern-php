@@ -6,7 +6,7 @@
  * Time: 12:12
  */
 
-namespace App\Factory\StaticFactory\test;
+namespace Test;
 
 
 use App\Factory\StaticFactory\NumberFormat;
@@ -21,7 +21,10 @@ class StaticFactoryTest extends TestCase
      */
     public function testNumberFormat()
     {
+
         $this->assertInstanceOf(NumberFormat::class, StaticFactory::getFormatObj('number'));
+        $numberFormat = StaticFactory::getFormatObj('number');
+        $this->assertEquals(1, $numberFormat->format(1));
     }
 
     /**
@@ -30,6 +33,8 @@ class StaticFactoryTest extends TestCase
     public function testStringFormat()
     {
         $this->assertInstanceOf(StringFormat::class, StaticFactory::getFormatObj('string'));
+        $stringFormat = StaticFactory::getFormatObj('string');
+        $this->assertEquals('hello', $stringFormat->format('hello'));
     }
 
     /**
@@ -37,6 +42,7 @@ class StaticFactoryTest extends TestCase
      */
     public function testException()
     {
+        $this->expectException(\Exception::class);
         StaticFactory::getFormatObj('obj');
     }
 

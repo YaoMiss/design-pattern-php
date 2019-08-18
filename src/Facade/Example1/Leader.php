@@ -24,11 +24,11 @@ class Leader
 
     public function callCoder()
     {
-        $this->coder->doWork();
+        return $this->coder->doWork();
     }
 
     public function callTester()
     {
-        $this->tester->doWork();
+        return $this->tester->doWork();
     }
 }

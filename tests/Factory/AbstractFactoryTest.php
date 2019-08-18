@@ -6,8 +6,7 @@
  * Time: 09:43
  */
 
-namespace App\Factory\AbstractFactory\test;
-
+namespace Test;
 
 use App\Factory\AbstractFactory\ClothesProduct;
 use App\Factory\AbstractFactory\FoodProduct;
@@ -28,6 +27,22 @@ class AbstractFactoryTest extends TestCase
     {
         $factory = new ProductFactory();
         $foodProduct = $factory->getFoodProduct(150);
-        $this->assertInstanceOf(FoodProduct::class,$foodProduct);
+        $this->assertInstanceOf(FoodProduct::class, $foodProduct);
+    }
+
+    public function testClothesCalcPriceAndDiscountPrice()
+    {
+        $factory = new ProductFactory();
+        $clothesProduct = $factory->getClothesProduct(100);
+        $this->assertEquals(100, $clothesProduct->calcPrice());
+        $this->assertSame(80, $clothesProduct->getDiscountPrice(0.8));
+    }
+
+    public function testFoodCalcPriceAnaUpdatePrice()
+    {
+        $factory = new ProductFactory();
+        $foodProduct = $factory->getFoodProduct(150);
+        $this->assertEquals(150, $foodProduct->calcPrice());
+        $this->assertEquals(200, $foodProduct->updatePrice(200));
     }
 }

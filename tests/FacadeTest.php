@@ -6,9 +6,9 @@
  * Time: 20:46
  */
 
-namespace App\Facade\test;
+namespace Test;
 
-
+use App\Facade\Example1\Leader;
 use App\Facade\Example2\BiosInterface;
 use App\Facade\Example2\Facade;
 use PHPUnit\Framework\TestCase;
@@ -23,10 +23,9 @@ class FacadeTest extends TestCase
         $os->method('getName')->will($this->returnValue('Linux'));
 
         $bios = $this->getMockBuilder('App\Facade\Example2\BiosInterface')
-            ->setMethods(['launch', 'execute', 'waitForKeyPress'])
+//            ->setMethods(['launch', 'execute', 'waitForKeyPress'])
             ->disableAutoload()
             ->getMock();
-
 
         $bios->expects($this->once())
             ->method('launch')
@@ -38,6 +37,14 @@ class FacadeTest extends TestCase
         $facade->turnOn();
         // but you can also access the underlying components
         $this->assertSame('Linux', $os->getName());
+        $facade->turnOff();
+    }
+
+    public function testLeader()
+    {
+        $leader = new Leader();
+        $this->assertSame('技术人员 (coder)', $leader->callCoder());
+        $this->assertSame('测试人员(test member)', $leader->callTester());
     }
 
 }

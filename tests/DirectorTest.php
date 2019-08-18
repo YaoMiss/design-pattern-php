@@ -6,8 +6,7 @@
  * Time: 23:59
  */
 
-namespace App\Bulider\test;
-
+namespace Test;
 
 use App\Bulider\CarBuilder;
 use App\Bulider\Director;

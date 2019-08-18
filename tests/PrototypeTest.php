@@ -6,7 +6,7 @@
  * Time: 00:25
  */
 
-namespace App\Prototype\test;
+namespace Test;
 
 
 use App\Prototype\BarBookPrototype;
@@ -25,11 +25,13 @@ class PrototypeTest extends TestCase
             $book = clone $fooBookPrototype;
             $book->setTitle('Foo PaperBook No ' . $i);
             $this->assertInstanceOf(FooBookPrototype::class, $book);
+            $this->assertEquals('Foo PaperBook No '.$i,$book->getTitle());
         }
         for ($i = 0; $i < 5; $i++) {
             $book = clone $barBookPrototype;
             $book->setTitle('Bar PaperBook No ' . $i);
             $this->assertInstanceOf(BarBookPrototype::class, $book);
+            $this->assertEquals('Bar PaperBook No '.$i,$book->getTitle());
         }
     }
 }

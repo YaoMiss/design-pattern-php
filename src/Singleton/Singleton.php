@@ -7,6 +7,7 @@
  */
 
 namespace App\Singleton;
+
 /**
  * Class Singleton
  * 懒汉式单例模式
@@ -41,8 +42,11 @@ class Singleton
         return self::$instance;
     }
 
+    /**
+     * @throws \Exception
+     */
     public function __clone()
     {
-        echo 'not allow clone';
+        throw new \Exception('not allow clone');
     }
 }

@@ -14,6 +14,6 @@ class Coder
 
     public function doWork()
     {
-        echo $this->name;
+        return $this->name;
     }
 }

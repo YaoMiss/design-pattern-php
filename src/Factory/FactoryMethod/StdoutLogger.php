@@ -14,6 +14,6 @@ class StdoutLogger implements LoggerInterface
 
     public function log(string $message)
     {
-        echo  $message;
+        return  $message;
     }
 }

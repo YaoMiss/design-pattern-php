@@ -6,7 +6,7 @@
  * Time: 17:17
  */
 
-namespace App\Pool\test;
+namespace Test;
 
 
 use App\Pool\WorkerPool;
@@ -31,5 +31,7 @@ class PoolTest extends TestCase
         $worker2 = $pool->get();
         $this->assertCount(1, $pool);
         $this->assertSame($worker1, $worker2);
+
+        $this->assertEquals('krow',$worker1->run('work'));
     }
 }

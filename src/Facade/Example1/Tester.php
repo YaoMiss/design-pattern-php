@@ -14,6 +14,6 @@ class Tester
 
     public function doWork()
     {
-        echo $this->name;
+        return  $this->name;
     }
 }

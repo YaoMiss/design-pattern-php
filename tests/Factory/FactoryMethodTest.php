@@ -6,7 +6,7 @@
  * Time: 23:03
  */
 
-namespace App\Factory\FactoryMethod\test;
+namespace Test;
 
 
 use App\Factory\FactoryMethod\FileLogger;
@@ -24,13 +24,17 @@ class FactoryMethodTest extends TestCase
         $loggerFactory = new StdoutLoggerFactory();
         $logger = $loggerFactory->createLogger();
         $this->assertInstanceOf(StdoutLogger::class, $logger);
+        $this->assertEquals('Hello', $logger->log('Hello'));
     }
 
     public function testCanCreateFileLogger()
     {
-        $path = __DIR__ . '/log/fileLogger';
+        $path = __DIR__ . '/../../log/logger';
         $loggerFactory = new FileLoggerFactory($path);
         $logger = $loggerFactory->createLogger();
         $this->assertInstanceOf(FileLogger::class, $logger);
+        unlink($path);
+        $logger->log('Hello');
+        $this->assertStringEqualsFile($path,'Hello'.PHP_EOL );
     }
 }
