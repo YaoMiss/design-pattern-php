@@ -15,7 +15,7 @@ install:
   - composer install --prefer-dist --no-interaction
 
 script:
-  - vendor/bin/phpunit
-#  - vendor/bin/phpcs ./src
-#  - vendor/bin/phpcbf ./src
+  - vendor/bin/phpcs  ./
+  - vendor/bin/phpcbf ./
   - vendor/bin/psalm --show-info=false
+  - vendor/bin/phpunit
