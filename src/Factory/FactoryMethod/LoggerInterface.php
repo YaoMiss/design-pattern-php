@@ -8,8 +8,7 @@
 
 namespace App\Factory\FactoryMethod;
 
-
-interface  LoggerInterface
+interface LoggerInterface
 {
     public function log(string $message);
 }

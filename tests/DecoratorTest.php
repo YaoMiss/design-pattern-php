@@ -8,7 +8,6 @@
 
 namespace Test;
 
-
 use App\Decorator\DoubleRoomBooking;
 use App\Decorator\ExtraBed;
 use App\Decorator\Starbucks\Cappuccino;
@@ -68,8 +67,7 @@ class DecoratorTest extends TestCase
         $espresso = new Espresso();
         $cappuccino = new Cappuccino($espresso);
 
-        $this->assertSame(15,$cappuccino->cost());
-        $this->assertSame('Espresso:Cappuccino (Milk)',$cappuccino->getDescription());
+        $this->assertSame(15, $cappuccino->cost());
+        $this->assertSame('Espresso:Cappuccino (Milk)', $cappuccino->getDescription());
     }
-
 }

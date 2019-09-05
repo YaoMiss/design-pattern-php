@@ -8,7 +8,6 @@
 
 namespace App\Decorator\Starbucks;
 
-
 interface Beverage
 {
     public function getDescription(): string;

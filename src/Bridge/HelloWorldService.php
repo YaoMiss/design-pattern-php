@@ -8,11 +8,10 @@
 
 namespace App\Bridge;
 
-
 class HelloWorldService extends FormatterService
 {
 
-    function get()
+    public function get()
     {
         return $this->formatterImplementation->format('Hello World');
     }

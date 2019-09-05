@@ -8,7 +8,6 @@
 
 namespace App\DataMapper;
 
-
 class User
 {
     private $username;

@@ -8,11 +8,10 @@
 
 namespace App\Factory\StaticFactory;
 
-
 class NumberFormat implements FormatInterface
 {
     public function format(string $input): string
     {
-        return number_format($input);
+        return number_format(intval($input));
     }
 }

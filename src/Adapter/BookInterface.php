@@ -8,7 +8,6 @@
 
 namespace App\Adapter;
 
-
 interface BookInterface
 {
 

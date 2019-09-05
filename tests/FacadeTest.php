@@ -11,6 +11,7 @@ namespace Test;
 use App\Facade\Example1\Leader;
 use App\Facade\Example2\BiosInterface;
 use App\Facade\Example2\Facade;
+use App\Facade\Example2\OsInterface;
 use PHPUnit\Framework\TestCase;
 
 class FacadeTest extends TestCase
@@ -18,11 +19,11 @@ class FacadeTest extends TestCase
 
     public function testComputerOn()
     {
-        $os = $this->createMock('App\Facade\Example2\OsInterface');
+        $os = $this->createMock(OsInterface::class);
 
         $os->method('getName')->will($this->returnValue('Linux'));
 
-        $bios = $this->getMockBuilder('App\Facade\Example2\BiosInterface')
+        $bios = $this->getMockBuilder(BiosInterface::class)
 //            ->setMethods(['launch', 'execute', 'waitForKeyPress'])
             ->disableAutoload()
             ->getMock();
@@ -46,5 +47,4 @@ class FacadeTest extends TestCase
         $this->assertSame('技术人员 (coder)', $leader->callCoder());
         $this->assertSame('测试人员(test member)', $leader->callTester());
     }
-
 }

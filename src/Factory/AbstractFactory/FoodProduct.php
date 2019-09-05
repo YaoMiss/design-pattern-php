@@ -8,7 +8,6 @@
 
 namespace App\Factory\AbstractFactory;
 
-
 class FoodProduct implements ProductInterface
 {
     /**

@@ -8,7 +8,6 @@
 
 namespace App\Factory\StaticFactory;
 
-
 class StringFormat implements FormatInterface
 {
 

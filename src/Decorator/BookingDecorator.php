@@ -8,7 +8,6 @@
 
 namespace App\Decorator;
 
-
 abstract class BookingDecorator implements Booking
 {
     protected $booking;

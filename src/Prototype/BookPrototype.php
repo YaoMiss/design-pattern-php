@@ -8,7 +8,6 @@
 
 namespace App\Prototype;
 
-
 abstract class BookPrototype
 {
     /** @var string */

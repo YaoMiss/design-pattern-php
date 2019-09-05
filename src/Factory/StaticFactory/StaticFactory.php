@@ -8,7 +8,6 @@
 
 namespace App\Factory\StaticFactory;
 
-
 class StaticFactory
 {
     /**
@@ -19,7 +18,7 @@ class StaticFactory
     public static function getFormatObj(string $type): FormatInterface
     {
         switch ($type) {
-            case  'number' :
+            case 'number':
                 return new NumberFormat();
                 break;
 

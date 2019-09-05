@@ -8,7 +8,6 @@
 
 namespace App\DataMapper;
 
-
 class StorageAdapter
 {
     private $data = array();
@@ -18,7 +17,7 @@ class StorageAdapter
         $this->data = $data;
     }
 
-    public function find(string $id)
+    public function find(int $id)
     {
         if (isset($this->data[$id])) {
             return $this->data[$id];

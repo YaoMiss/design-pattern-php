@@ -8,7 +8,6 @@
 
 namespace App\Composite\Example;
 
-
 interface RenderableInterface
 {
     public function render(): string;

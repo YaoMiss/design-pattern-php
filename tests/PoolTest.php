@@ -8,7 +8,6 @@
 
 namespace Test;
 
-
 use App\Pool\WorkerPool;
 use PHPUnit\Framework\TestCase;
 
@@ -32,6 +31,6 @@ class PoolTest extends TestCase
         $this->assertCount(1, $pool);
         $this->assertSame($worker1, $worker2);
 
-        $this->assertEquals('krow',$worker1->run('work'));
+        $this->assertEquals('krow', $worker1->run('work'));
     }
 }

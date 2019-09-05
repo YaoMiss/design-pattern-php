@@ -8,7 +8,6 @@
 
 namespace App\Decorator;
 
-
 interface Booking
 {
     public function calculatePrice(): int;

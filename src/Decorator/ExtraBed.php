@@ -8,7 +8,6 @@
 
 namespace App\Decorator;
 
-
 class ExtraBed extends BookingDecorator
 {
     const PRICE = 30;

@@ -8,7 +8,6 @@
 
 namespace App\Factory\FactoryMethod;
 
-
 class StdoutLogger implements LoggerInterface
 {
 

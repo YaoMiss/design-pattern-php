@@ -8,7 +8,6 @@
 
 namespace Test;
 
-
 use App\Bridge\HelloWorldService;
 use App\Bridge\HtmlFormatter;
 use App\Bridge\PlainTextFormatter;

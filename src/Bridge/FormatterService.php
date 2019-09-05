@@ -8,7 +8,6 @@
 
 namespace App\Bridge;
 
-
 abstract class FormatterService
 {
     /** @var FormatterInterface */
@@ -19,5 +18,5 @@ abstract class FormatterService
         $this->formatterImplementation = $formatter;
     }
 
-    abstract function get();
+    abstract public function get();
 }

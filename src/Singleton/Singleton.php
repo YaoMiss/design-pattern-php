@@ -18,7 +18,6 @@ class Singleton
 {
     /**
      * 需要是私有，不能直接被外界调用
-     * @var null
      */
     private static $instance = null;
 
@@ -36,7 +35,7 @@ class Singleton
     {
         //多个线程判断 instance 都为null时，在执行new操作时多线程会出现重复情况
         if (is_null(self::$instance)) {
-            self::$instance = new self();
+            self::$instance = new Singleton();
         }
 
         return self::$instance;

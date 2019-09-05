@@ -8,7 +8,6 @@
 
 namespace Test;
 
-
 use App\Factory\StaticFactory\NumberFormat;
 use App\Factory\StaticFactory\StaticFactory;
 use App\Factory\StaticFactory\StringFormat;
@@ -24,7 +23,7 @@ class StaticFactoryTest extends TestCase
 
         $this->assertInstanceOf(NumberFormat::class, StaticFactory::getFormatObj('number'));
         $numberFormat = StaticFactory::getFormatObj('number');
-        $this->assertEquals(1, $numberFormat->format(1));
+        $this->assertEquals(1, $numberFormat->format('1'));
     }
 
     /**
@@ -45,5 +44,4 @@ class StaticFactoryTest extends TestCase
         $this->expectException(\Exception::class);
         StaticFactory::getFormatObj('obj');
     }
-
 }

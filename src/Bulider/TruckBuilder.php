@@ -8,7 +8,6 @@
 
 namespace App\Bulider;
 
-
 use App\Bulider\Parts\Door;
 use App\Bulider\Parts\Engine;
 use App\Bulider\Parts\Truck;

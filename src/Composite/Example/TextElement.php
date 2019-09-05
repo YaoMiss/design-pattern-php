@@ -8,7 +8,6 @@
 
 namespace App\Composite\Example;
 
-
 class TextElement implements RenderableInterface
 {
     private $text;

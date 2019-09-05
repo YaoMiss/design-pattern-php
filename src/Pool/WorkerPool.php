@@ -8,7 +8,6 @@
 
 namespace App\Pool;
 
-
 class WorkerPool implements \Countable
 {
     /** @var StringReverseWorker[] */

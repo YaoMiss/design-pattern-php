@@ -8,7 +8,6 @@
 
 namespace App\Pool;
 
-
 class StringReverseWorker
 {
     /** @var \DateTime */

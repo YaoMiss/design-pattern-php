@@ -8,7 +8,6 @@
 
 namespace App\Adapter;
 
-
 class PaperBook implements BookInterface
 {
     /**

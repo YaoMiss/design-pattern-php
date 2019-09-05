@@ -8,7 +8,6 @@
 
 namespace App\Composite\Example;
 
-
 class InputElement implements RenderableInterface
 {
     public function render(): string

@@ -8,7 +8,6 @@
 
 namespace App\Bulider\Parts;
 
-
 class Car extends Vehicle
 {
 

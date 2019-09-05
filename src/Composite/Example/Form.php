@@ -8,7 +8,6 @@
 
 namespace App\Composite\Example;
 
-
 class Form implements RenderableInterface
 {
     /** @var RenderableInterface[] */

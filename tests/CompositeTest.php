@@ -53,7 +53,6 @@ class CompositeTest extends TestCase
             sprintf('Leader:CTO' . PHP_EOL . 'Engineer:frontend' . PHP_EOL),
             $leader->display()
         );
-
     }
 
     public function testOpenType()

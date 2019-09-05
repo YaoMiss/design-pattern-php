@@ -8,7 +8,6 @@
 
 namespace Test;
 
-
 use App\DataMapper\StorageAdapter;
 use App\DataMapper\User;
 use App\DataMapper\UserMapper;
@@ -41,5 +40,4 @@ class DataMapperTest extends TestCase
 
         $mapper->findById(1);
     }
-
 }

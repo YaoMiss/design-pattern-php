@@ -8,7 +8,6 @@
 
 namespace App\Facade\Example2;
 
-
 interface OsInterface
 {
     public function halt();

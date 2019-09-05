@@ -8,7 +8,6 @@
 
 namespace App\Adapter;
 
-
 class EBookAdapter implements BookInterface
 {
     private $eBook;

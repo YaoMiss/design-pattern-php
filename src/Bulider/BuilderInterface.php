@@ -8,7 +8,6 @@
 
 namespace App\Bulider;
 
-
 use App\Bulider\Parts\Vehicle;
 
 interface BuilderInterface
@@ -22,5 +21,4 @@ interface BuilderInterface
     public function addEngine();
 
     public function addDoors();
-
 }

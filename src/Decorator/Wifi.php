@@ -8,7 +8,6 @@
 
 namespace App\Decorator;
 
-
 class Wifi extends BookingDecorator
 {
     const PRICE = 2;

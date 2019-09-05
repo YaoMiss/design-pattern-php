@@ -8,7 +8,6 @@
 
 namespace App\Bridge;
 
-
 class PlainTextFormatter implements FormatterInterface
 {
 

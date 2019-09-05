@@ -28,5 +28,4 @@ class SingletonTest extends TestCase
 
         $this->assertNotSame($firstSingleton, $new);
     }
-
 }

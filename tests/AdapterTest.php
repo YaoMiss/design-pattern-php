@@ -45,5 +45,4 @@ class AdapterTest extends TestCase
 
         $this->assertSame(0, $bookInterface->getPage());
     }
-
 }

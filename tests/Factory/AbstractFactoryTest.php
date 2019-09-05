@@ -35,7 +35,7 @@ class AbstractFactoryTest extends TestCase
         $factory = new ProductFactory();
         $clothesProduct = $factory->getClothesProduct(100);
         $this->assertEquals(100, $clothesProduct->calcPrice());
-        $this->assertSame(80, $clothesProduct->getDiscountPrice(0.8));
+        $this->assertSame(80.0, $clothesProduct->getDiscountPrice('0.8'));
     }
 
     public function testFoodCalcPriceAnaUpdatePrice()

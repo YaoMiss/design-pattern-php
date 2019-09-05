@@ -8,8 +8,7 @@
 
 namespace App\Factory\AbstractFactory;
 
-
 interface ProductInterface
 {
-    public function calcPrice():int ;
+    public function calcPrice():int;
 }

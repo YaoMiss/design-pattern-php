@@ -8,7 +8,6 @@
 
 namespace App\Prototype;
 
-
 class FooBookPrototype extends BookPrototype
 {
     protected $category = 'Foo';

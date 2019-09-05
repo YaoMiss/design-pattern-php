@@ -32,5 +32,4 @@ class DirectorTest extends TestCase
 
         $this->assertInstanceOf(Car::class, $newCar);
     }
-
 }

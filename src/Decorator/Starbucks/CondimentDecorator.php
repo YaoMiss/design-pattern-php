@@ -8,7 +8,6 @@
 
 namespace App\Decorator\Starbucks;
 
-
 abstract class CondimentDecorator implements Beverage
 {
 

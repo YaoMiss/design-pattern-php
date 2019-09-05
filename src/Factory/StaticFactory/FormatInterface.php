@@ -8,7 +8,6 @@
 
 namespace App\Factory\StaticFactory;
 
-
 interface FormatInterface
 {
     public function format(string $input): string;

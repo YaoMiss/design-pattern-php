@@ -8,7 +8,6 @@
 
 namespace App\Decorator;
 
-
 class DoubleRoomBooking implements Booking
 {
 

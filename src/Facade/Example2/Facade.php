@@ -8,7 +8,6 @@
 
 namespace App\Facade\Example2;
 
-
 class Facade
 {
     private $os;

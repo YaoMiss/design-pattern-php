@@ -8,7 +8,6 @@
 
 namespace App\Factory\AbstractFactory;
 
-
 class ProductFactory
 {
     public function getClothesProduct(int $price): ClothesProduct

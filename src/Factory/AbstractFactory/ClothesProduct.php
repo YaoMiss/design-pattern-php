@@ -8,7 +8,6 @@
 
 namespace App\Factory\AbstractFactory;
 
-
 class ClothesProduct implements ProductInterface
 {
     /**
@@ -26,7 +25,7 @@ class ClothesProduct implements ProductInterface
         return $this->price;
     }
 
-    public function getDiscountPrice(float $discount):int
+    public function getDiscountPrice(float $discount):float
     {
         return ceil($this->price * $discount);
     }

@@ -8,7 +8,6 @@
 
 namespace App\Prototype;
 
-
 class BarBookPrototype extends BookPrototype
 {
 

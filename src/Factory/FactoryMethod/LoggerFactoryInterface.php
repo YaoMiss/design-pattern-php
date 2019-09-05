@@ -8,7 +8,6 @@
 
 namespace App\Factory\FactoryMethod;
 
-
 interface LoggerFactoryInterface
 {
     public function createLogger(): LoggerInterface;

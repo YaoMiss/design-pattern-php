@@ -8,13 +8,11 @@
 
 namespace Test;
 
-
 use App\Factory\FactoryMethod\FileLogger;
 use App\Factory\FactoryMethod\FileLoggerFactory;
 use App\Factory\FactoryMethod\StdoutLogger;
 use App\Factory\FactoryMethod\StdoutLoggerFactory;
 use PHPUnit\Framework\TestCase;
-
 
 class FactoryMethodTest extends TestCase
 {
@@ -35,6 +33,6 @@ class FactoryMethodTest extends TestCase
         $this->assertInstanceOf(FileLogger::class, $logger);
         unlink($path);
         $logger->log('Hello');
-        $this->assertStringEqualsFile($path,'Hello'.PHP_EOL );
+        $this->assertStringEqualsFile($path, 'Hello'.PHP_EOL);
     }
 }
