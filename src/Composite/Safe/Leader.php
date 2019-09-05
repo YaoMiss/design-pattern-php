@@ -38,7 +38,7 @@ class Leader extends Employee
         return $this;
     }
 
-    function display()
+    public function display()
     {
         $leader = sprintf("Leader:" . $this->getName() . PHP_EOL);
 

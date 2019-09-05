@@ -15,14 +15,14 @@ class Leader extends Employee
         $this->setName($name);
     }
 
-    function add(Employee $employee)
+    public function add(Employee $employee)
     {
         $this->employees[$employee->getName()] = $employee;
 
         return $this;
     }
 
-    function remove(Employee $employee)
+    public function remove(Employee $employee)
     {
         $key = $employee->getName();
 
@@ -35,7 +35,7 @@ class Leader extends Employee
         return $this;
     }
 
-    function display()
+    public function display()
     {
         $leader = sprintf("Leader:" . $this->getName() . PHP_EOL);
 

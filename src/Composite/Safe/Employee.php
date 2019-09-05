@@ -31,5 +31,5 @@ abstract class Employee
         return $this;
     }
 
-    abstract function display();
+    abstract public function display();
 }

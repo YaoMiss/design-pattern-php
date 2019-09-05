@@ -15,7 +15,7 @@ class Engineer extends Employee
         $this->setName($name);
     }
 
-    function display()
+    public function display()
     {
         return  sprintf("Engineer:" . $this->getName() . PHP_EOL);
     }

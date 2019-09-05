@@ -15,18 +15,18 @@ class Engineer extends Employee
         $this->setName($name);
     }
 
-    function add(Employee $employee)
+    public function add(Employee $employee)
     {
         // TODO: Implement add() method.
     }
 
-    function remove(Employee $employee)
+    public function remove(Employee $employee)
     {
         // TODO: Implement remove() method.
     }
 
-    function display()
+    public function display()
     {
-        return  sprintf("Engineer:" . $this->getName() . PHP_EOL);
+        return sprintf("Engineer:" . $this->getName() . PHP_EOL);
     }
 }

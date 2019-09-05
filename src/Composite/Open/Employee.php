@@ -35,9 +35,9 @@ abstract class Employee
         $this->employees = $employees;
     }
 
-    abstract function add(Employee $employee);
+    abstract public function add(Employee $employee);
 
-    abstract function remove(Employee $employee);
+    abstract public function remove(Employee $employee);
 
-    abstract function display();
+    abstract public function display();
 }
