@@ -27,7 +27,7 @@ class FactoryMethodTest extends TestCase
 
     public function testCanCreateFileLogger()
     {
-        $path = __DIR__ . '/../../log/logger';
+        $path = __DIR__ . '/../logger';
         $loggerFactory = new FileLoggerFactory($path);
         $logger = $loggerFactory->createLogger();
         $this->assertInstanceOf(FileLogger::class, $logger);
