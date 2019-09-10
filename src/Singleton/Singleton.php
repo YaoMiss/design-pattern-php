@@ -28,7 +28,6 @@ class Singleton
      */
     private function __construct()
     {
-        //@todo your init
     }
 
     public static function getInstance()

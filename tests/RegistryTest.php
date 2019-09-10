@@ -25,20 +25,20 @@ class RegistryTest extends TestCase
     }
 
     /**
-     * @expectedException \InvalidArgumentException
      */
     public function testThrowsExceptionWhenTryingToSetInvalidKey()
     {
+        $this->expectException(\InvalidArgumentException::class);
         Registry::set('test', new \stdClass());
     }
 
     /**
      * notice: should set a new process to handle this static function
      * @runInSeparateProcess
-     * @expectedException \InvalidArgumentException
      */
     public function testThrowsExceptionWhenTryingToGetNotSetKey()
     {
+        $this->expectException(\InvalidArgumentException::class);
         Registry::get(Registry::LOGGER);
     }
 }

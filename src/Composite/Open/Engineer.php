@@ -17,12 +17,10 @@ class Engineer extends Employee
 
     public function add(Employee $employee)
     {
-        // TODO: Implement add() method.
     }
 
     public function remove(Employee $employee)
     {
-        // TODO: Implement remove() method.
     }
 
     public function display()
