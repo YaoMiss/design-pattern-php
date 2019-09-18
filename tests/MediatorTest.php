@@ -22,5 +22,4 @@ class MediatorTest extends TestCase
         $this->expectOutputString('User: Dominik');
         $mediator->printInfoAbout('Dominik');
     }
-
 }
