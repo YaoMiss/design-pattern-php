@@ -24,8 +24,6 @@ class RegistryTest extends TestCase
         $this->assertInstanceOf(\stdClass::class, Registry::get($key));
     }
 
-    /**
-     */
     public function testThrowsExceptionWhenTryingToSetInvalidKey()
     {
         $this->expectException(\InvalidArgumentException::class);
